@@ -1,0 +1,13 @@
+awk {print} employee.txt
+
+awk '/manager/ {print}' employee.txt
+
+awk /manager/ {print} employee.txt
+
+awk {print $1,$4} employee.txt - for printing space separated characters that are then stored in the $n variable
+
+awk '{print NR,$0}' employee.txt - prints each line of the file with a number line in front of it
+
+awk '{print $1,$NF}' employee.txt - where NF represent last field
+
+awk 'NR==3, NR==6 {print NR,$0}' employee.txt - Displays from line 3 to line 6
