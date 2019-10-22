@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#Environment variables usage example
+
+#Display user home
+echo "Home for the current user is: $HOME"
