@@ -1,5 +1,8 @@
 #!/bin/bash
 
 #Comment meeee
+
+echo "The current directory is:"
 pwd
+echo "The current logged in user is:"
 whoami
