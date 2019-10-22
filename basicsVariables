@@ -4,3 +4,13 @@
 
 #Display user home
 echo "Home for the current user is: $HOME"
+
+#Display the dollar sign itself
+echo "I have \$1 in my pocket"
+
+#User variables usage example
+
+#User variables
+grade=5
+person="Adam"
+echo "$person is a good boy, he is in grade $grade"

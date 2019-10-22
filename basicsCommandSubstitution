@@ -1,0 +1,8 @@
+#! /bin/bash
+
+#Basics in getting the output of a command and putting it in a variable with
+# the back-tick character (`) and the $() format.
+
+mydir=`pwd`
+mydir=$(pwd)
+echo $mydir
