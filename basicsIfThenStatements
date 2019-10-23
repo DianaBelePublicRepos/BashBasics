@@ -1,0 +1,11 @@
+#! /bin/bash
+
+#Basic if-then statements
+#structure:
+#if command; then
+#do something
+#fi
+
+if whoami; then
+    echo "It works"
+fi

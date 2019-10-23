@@ -1,0 +1,9 @@
+#! /bin/bash
+
+#Checking if the user exists
+
+user=dianabele
+
+if grep $user /etc/passwd; then
+    echo "No such a user $user"
+fi
