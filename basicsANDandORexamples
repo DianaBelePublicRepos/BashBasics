@@ -1,0 +1,19 @@
+#! /bin/bash
+
+#Basic AND example for condition
+
+dir=/Users/dianabele
+name="dianabele"
+if [ -d $dir ] && [ -n $name ]; then
+    echo "The name exists and the folder $dir exists."
+else
+    echo "One test failed"
+fi
+
+#Basic OR example for condition
+
+if [ -d $dir ] || [ -n $name ]; then
+    echo "Success!11!!11 At least one of them is present hurrrrrray!!"
+else
+    echo "Both tests failed"
+fi
