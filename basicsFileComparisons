@@ -1,0 +1,21 @@
+#! /bin/bash
+
+# We can compare and check for files using the following operators:
+# -d my_file - Checks if its a folder.
+# -e my_file - Checks if the file is available.
+# -f my_file - Checks if its a file.
+# -r my_file - Checks if it’s readable.
+# my_file –nt my_file2 - Checks if my_file is newer than my_file2.
+# my_file –ot my_file2 - Checks if my_file is older than my_file2.
+# -O my_file - Checks if the owner of the file and the logged in user match.
+# -G my_file - Checks if the file and the logged in user have the same identical group.
+
+mydir=/Users/dianabele
+
+if [ -d $mydir ]; then
+    echo "Directory $mydir exists"
+    cd $mydir
+    ls -al
+else
+    echo "NO such file or directory $mydir"
+fi
