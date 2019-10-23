@@ -1,0 +1,17 @@
+#! /bin/bash
+
+# Greater than and less than for string comparisons MUST be escaped with a backslash
+# because if you use the greater-than symbol only, it shows wrong results.
+
+
+#The test condition considers the lowercase letters bigger than capital letters.
+#The test condition is based on the ASCII order
+
+v1=text
+v2="Another text"
+
+if [ $v1 \> "$v2" ]; then
+    echo "$v1 is greater than $v2"
+else
+    echo "$v1 is less than $v2"
+fi
