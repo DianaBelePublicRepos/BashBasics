@@ -1,0 +1,17 @@
+#! /bin/bash
+
+#Perform a numeric comparison between two numeric values
+#using numeric comparison checks like:
+
+#number1 -eq number2 - Checks if number1 is equal to number2.
+#number1 -ge number2 - Checks if number1 is bigger than or equal number2.
+#number1 -gt number2 - Checks if number1 is bigger than number2.
+#number1 -le number2 - Checks if number1 is smaller than or equal number2.
+#number1 -ne number2 - Checks if number1 is not equal to number2.
+
+num=11
+if [ $num -gt 10 ]; then
+    echo "$num is bigger than 10"
+else
+    echo "$num is less than 10"
+fi
