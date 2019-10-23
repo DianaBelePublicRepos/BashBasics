@@ -1,0 +1,19 @@
+#! /bin/bash
+
+#Comparing strings in one of the following ways:
+#string1 = string2 - Checks if string1 identical to string2.
+#string1 != string2 - Checks if string1 is not identical to string2.
+#string1 < string2 - Checks if string1 is less than string2.
+#string1 > string2 - Checks if string1 is greater than string2.
+# -n string1 - Checks if string1 longer than zero.
+# -z string1 - Checks if string1 is zero length.
+
+user=dianabel
+loggedIn=$(whoami)
+
+if [ $user = $USER ]; then
+    echo "The user $user is the currently logged in user"
+
+else
+    echo "Sorry mate, no luck here - you need to look for $loggedIn"
+fi
