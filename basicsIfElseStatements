@@ -1,0 +1,15 @@
+#! /bin/bash
+
+#Basic if-then-else statements have the format:
+#if command; then
+#do something
+#else
+#do another thing
+#fi
+
+user=anotherUser
+if grep $user /etc/passwd; then
+    echo "The user $user exists"
+elif ls /home; then
+    echo "The user doesn't exist"
+fi
