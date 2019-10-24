@@ -1,0 +1,40 @@
+#! /bin/bash
+
+#We start out by having the user choose the environment in which they want to work in
+
+read -p "
+Let's get started! :)
+
+Choose the cluster in which you'd like to work in. Options are:
+
+1. Production cluster
+2. Development cluster
+
+Type your option here ( choose a number ): " env_option
+
+if [ $env_option = 1 ]; then
+    echo "
+
+You are now in a ==== PRODUCTION ==== environment. Be VERY careful with it!
+
+"
+
+fi
+
+kubectl set context
+
+
+echo "List of the available namespaces:
+
+"
+
+kubectl get ns
+
+read -p 'What do you want to do?
+
+ 1. Restart Scheduler
+ 2. Restart Recurring tasks
+
+ Your option ( choose a number ): ' restart_option
+
+    echo "You have chosen $restart_option. "
