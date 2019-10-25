@@ -1,0 +1,14 @@
+#! /bin/bash
+
+#Simple iteration
+
+for var in first second third fourth fifth; do
+     echo The $var item
+done
+
+#Iterating over complex values where Your list maybe contain a
+#comma or two words, and you want to deal with them as one item on the list.
+
+for var in first "the second" "the third" "I'll do it"; do
+     echo "This is: $var"
+done 
