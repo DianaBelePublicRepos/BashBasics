@@ -1,0 +1,31 @@
+#! /bin/bash
+
+#By default, the following characters treated as fields.
+
+#Space
+#Tab
+#newline
+#If your text includes any of these characters, the shell will assume it’s a new field.
+#you can change the internal field separator or IFS environment variable. like this:
+
+#IFS=$'\n'    For newlines
+#IFS=:        For colons
+
+#It will consider new lines as a separator instead of spaces.
+
+#Example 1 with test file with newlines
+file="testfilewithstuff.txt"
+IFS=$'\n'
+
+for var in $(cat $file); do
+    echo "$var"
+done
+
+#Example 2 with PATH output
+
+file="pathexample"
+IFS=:
+
+for var in $(cat $file); do
+    echo "$var"
+done

@@ -1,0 +1,9 @@
+#! /bin/bash
+
+#By using command substitution using this format $(Linux command) you can
+#store the result in a variable for later use.
+
+my_file="testfilewithstuff.txt"
+for var in $(cat $my_file); do
+    echo "$var"
+done
