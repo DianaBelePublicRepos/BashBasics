@@ -1,0 +1,31 @@
+#! /bin/bash
+
+#Maybe after the loop starts you want to stop at a specific value.
+#For this we would use:
+#The break command
+#The continue command
+
+#The ---- break ---- command
+
+echo "
+First example for the break command
+"
+for number in 10 11 12 13 14 15; do
+    if [ $number -eq 14 ]; then
+        break
+    fi
+    echo "Number: $number"
+done
+
+echo "
+Second example for a while loop + break
+"
+
+val=1
+while [ $val -lt 5 ]; do
+    if [ $val -eq 4 ]; then # Check number value
+        break # The Code Breaks here <==
+    fi
+    echo "Iteration $val" # The Printed Message
+    val=$(($val + 1))
+done
