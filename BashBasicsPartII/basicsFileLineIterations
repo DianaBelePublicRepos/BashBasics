@@ -1,0 +1,22 @@
+#! /bin/bash
+
+#Iterating over file contents
+
+#Setting the field separator to be newline
+IFS=$'\n'
+number=1
+
+#Loop for text lines in the sample file
+for text in $(cat sampleEmployees.txt ); do
+
+    echo "Line $number contains: "
+
+#Setting a new field separator for the fields in text
+    IFS=:
+
+#Loop for fields in text
+    for field in $text; do
+        echo "$field"
+    done
+number=$(($number +1))
+done
