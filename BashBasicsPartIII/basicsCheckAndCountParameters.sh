@@ -9,4 +9,7 @@ else
 fi
 
 #To get how many parameters passed, you can use this variable ($#).
-echo "There were $# parameters passed." 
+echo "There were $# parameters passed."
+
+#To get the last parameter.
+echo "Last passed parameter is: "${!#}
