@@ -1,0 +1,14 @@
+#! /bin/bash
+
+#After the loop starts you want to stop at a specific value.
+#Usage of the continue command:
+#     To stop executing the remaining commands inside a loop without exiting the loop.
+
+# The loop starts here
+
+for ((number = 1; number < 10; number++)); do
+    if [ $number -gt 0 ] && [ $number -lt 5 ]; then # Check if number greater than 0 and less than 5
+        continue
+    fi
+    echo "Iteration number: $number" # The printed message
+done
