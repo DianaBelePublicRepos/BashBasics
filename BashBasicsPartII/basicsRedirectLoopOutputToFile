@@ -1,0 +1,8 @@
+#! /bin/bash
+
+#Use the done command to send the loop output to a file
+
+for ((var = 1; var < 10; var++)); do
+    echo "Number is $var"
+done >myfile.txt
+echo "finished."
