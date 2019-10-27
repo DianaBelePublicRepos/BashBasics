@@ -1,0 +1,16 @@
+#! /bin/bash
+
+#Checks for a condition before every iteration.
+#The while loop command takes the following structure:
+
+#while condition; do
+
+#commands
+
+#done
+
+number=10
+while [ $number -gt 4 ]; do
+      echo $number
+      number=$(($number -1))
+done
