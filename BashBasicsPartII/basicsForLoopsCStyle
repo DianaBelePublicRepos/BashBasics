@@ -1,0 +1,8 @@
+#! /bin/bash
+
+# For loops in the format of for (( variable = start ; condition ; iteration step))
+# Example for (( var = 1; var < 5; var++ ))
+
+for ((var = 1; var <= 10; var ++)); do
+    echo "Number is $var"
+done
