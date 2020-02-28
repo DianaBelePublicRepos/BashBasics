@@ -8,7 +8,7 @@
 # -n string1 - Checks if string1 longer than zero.
 # -z string1 - Checks if string1 is zero length.
 
-user=dianabel
+user=dianabele
 loggedIn=$(whoami)
 
 if [ $user = $USER ]; then
